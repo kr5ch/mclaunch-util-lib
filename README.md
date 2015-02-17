@@ -6,6 +6,10 @@ This library can:
 * Read the launcher_profile.json file in the minecraft folder and serialize it (useful to retrieve the client token of the vanilla launcher for exemple)
 * More to come
 
+## Download
+
+The latest version can be found in [release/](release/)
+
 ## Making requests to Yggdrasil
 
 ```java
