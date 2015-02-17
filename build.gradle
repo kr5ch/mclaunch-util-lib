@@ -1,0 +1,41 @@
+// Add Java Support
+apply plugin: 'java'
+
+// IDE
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+group = 'net.kronos'
+archivesBaseName = 'mclaunch_util_lib'
+version = '0.0.1'
+sourceCompatibility = 1.7
+
+
+//force UTF-8 to the compileJava task
+compileJava.options.encoding = 'UTF-8'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.16.2'
+    compile 'com.google.code.gson:gson:2.3.1'
+}
+
+task sourceJar(type: Jar) {
+	from sourceSets.main.java
+	from sourceSets.main.resources
+	classifier = "sources"
+}
+
+artifacts {
+    archives sourceJar
+}
