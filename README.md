@@ -42,3 +42,7 @@ catch (JsonSyntaxException | IOException e) {
 }
 ```
 Why make things complicated ?
+
+## Dependencies
+* Google Gson 2.2.4 - https://code.google.com/p/google-gson/
+* Lombok 1.14.4 - http://projectlombok.org/
