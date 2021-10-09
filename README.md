@@ -1,4 +1,7 @@
 # mclaunch-util-lib
+
+> :warning: **This repository is archived and thus not maintained anymore.**
+
 Library to use Mojang's Yggdrasil authentication scheme (and more)
 
 This library can:
